@@ -10,6 +10,37 @@ body {
     left: 20px;
 }
 
+main a, header a {
+    position: relative;
+    display: inline-block;
+    /* Ensures width fits text only */
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+main a::after, header a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 0;
+    background-color: #ed1c24;
+    /* WSP red */
+    transition: width 0.3s ease;
+}
+
+main a:hover, header a:hover {
+    color: #ed1c24;
+}
+
+main a:hover::after, header a:hover::after {
+    width: 100%;
+    /* Now this is only as wide as the <a>'s text */
+}
+
+
 .mockup-container img {
     object-fit: cover;
     height: auto;
@@ -24,6 +55,7 @@ body {
 #info-body {
     padding: 2rem 0 1rem 0;
 }
+
 /* Initially hide the sidebar and adjust main content width for smaller screens */
 @media (max-width: 991.98px) {
     .sidebar {
