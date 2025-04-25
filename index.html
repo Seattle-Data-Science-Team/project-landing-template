@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WSP Project Template</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://seattle-data-science-team.github.io/Portfolio/img/img-png-wsp-red-square.png"
+        sizes="30x30">
+</head>
+
+<body>
+    <header class="px-4 py-3 border-bottom">
+        <div class="d-flex justify-content-between align-items-center">
+            <!-- Logo -->
+            <a href="#" class="text-dark text-decoration-none">
+                <img src="https://seattle-data-science-team.github.io/Portfolio/img/img-png-wsp-red-square.png"
+                    alt="WSP Logo" height="40">
+            </a>
+    
+            <!-- Hamburger menu -->
+            <button class="d-md-none btn p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars fs-4 text-dark"></i>
+            </button>
+    
+            <!-- Horizontal nav (md+) -->
+            <nav class="d-none d-md-flex gap-3 fw-bold small ">
+                <a href="#" class="text-dark text-decoration-none">WHAT WE DO</a>
+                <a href="#" class="text-dark text-decoration-none">WHO WE ARE</a>
+            </nav>
+        </div>
+    
+        <!-- Collapsible nav (sm) -->
+        <div class="collapse d-md-none mt-3 align-items-end text-end" id="navMenu">
+            <nav class="d-flex flex-column gap-2 fw-bold small">
+                <a href="#" class="text-dark text-decoration-none">WHAT WE DO</a>
+                <a href="#" class="text-dark text-decoration-none">WHO WE ARE</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content container-fluid py-4">
+
+        <div class="row mt-4">
+            <!-- Sidebar -->
+            <nav class="sidebar col-md-3">
+                <div class="mb-4 p-3">
+                        <ul class="nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a href="https://seattle-data-science-team.github.io/Portfolio/service" 
+                                    class="nav-item mb-2 nav-link text-dark d-inline-block">
+                                    <i class="fas fa-arrow-left me-1"></i> Return to all work
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class="nav-link text-dark" href="#what-it-is">
+                                    <i class="fas fa-info-circle me-2"></i>What it is
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class="nav-link text-dark" href="#tech-stack">
+                                    <i class="fas fa-cogs me-2"></i>Tech-Stack
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class="nav-link text-dark" href="#team">
+                                    <i class="fas fa-users me-2"></i>Team
+                                </a>
+                            </li>
+                            <li class="nav-item mb-2">
+                                <a class="nav-link text-dark" href="#demo">
+                                    <i class="fas fa-laptop-code me-2"></i>Demo
+                                </a>
+                            </li>
+                        </ul>
+                    <!-- </nav> -->
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <div class="col-md-9">
+                <div class="overflow-hidden">
+                    <section id="return-button" class="mb-5">
+                        <a href="https://seattle-data-science-team.github.io/Portfolio/service"
+                            class="nav-item mb-2 nav-link text-dark d-inline-block return-link-top">
+                            <i class="fas fa-arrow-left me-1"></i> Return to all work
+                        </a>
+                    </section>
+                    <section id="project-name" class="mb-5">
+                        <section id="info-header">
+                            <h1 class="fw-bold">[Project Name]</h1>
+                        </section>
+                        <section id="info-body" class="text-muted">
+                            <p>
+                                [Brief Description: One to two sentences summarizing the project.]<br>
+                                [Industry/Domain: The relevant industry or domain (e.g., Transportation, Infrastructure, Data Analytics).]<br>
+                                [Client: (If applicable or anonymized)]
+                            </p>
+                        </section>
+                        <img src="./assets/SCorridors_featuredimage-qh20ic1t7jfmm60ip9nwpdxmwufa0cgyhicbyqs78o.jpg"
+                            title="SCorridors_featuredimage" 
+                            alt="SCorridors_featuredimage" 
+                            class="img-fluid w-100">
+                    </section>
+
+                    <section id="what-it-is" class="mb-5">
+                        <section id="info-header">
+                            <h5 class="fw-bold text-uppercase"><i class="fas fa-info-circle me-2"></i>What it is</h5>
+                        </section>                        
+                        <section id="info-body" class="text-muted">
+                            <p>[What it is]</p>
+                        </section>
+                    </section>
+
+                    <section id="tech-stack" class="mb-5">
+                        <section id="info-header">
+                            <h5 class="fw-bold text-uppercase"><i class="fas fa-cogs me-2"></i>Tech-Stack</h5>
+                        </section>
+                        <section id="info-body" class="text-muted">
+                            <ul>
+                                <li>[Tech Spec]</li>
+                                <li>[Tech Spec]</li>
+                            </ul>
+                        </section>
+                    </section>
+
+                    <section id="team" class="mb-5">
+                        <section id="info-header">
+                            <h5 class="fw-bold text-uppercase"><i class="fas fa-users me-2"></i>Team</h5>
+                        </section>
+                        <section id="info-body" class="text-muted">
+                            <ul>
+                                <li>[Team Member]</li>
+                                <li>[Team Member]</li>
+                            </ul>
+                        </section>
+                    </section>
+
+                    <section id="demo" class="mb-5">
+                        <section id="info-header">
+                            <h5 class="fw-bold text-uppercase"><i class="fas fa-laptop-code me-2"></i>Demo</h5>
+                        </section>
+                        <section id="info-body" class="text-muted">
+                            <p>[Demo]</p>
+                        </section>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-4">
+        <div class="container container-fluid py-4">
+            <div class="row">
+
+                <!-- Left Half -->
+                <div class="col-md-6 mb-4">
+                    <div class="row">
+                        <div class="col-md-8 mb-4">
+                            <img src="https://seattle-data-science-team.github.io/Portfolio/img/img-png-wsp-red-square.png" width="80"
+                                height="80" class="mb-3">
+                            <p class="small">
+                                We are a team of Data Scientists and Planners at WSP, focused on building
+                                geospatial intelligence solutions for our clients.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Half -->
+                <div class="col-md-6 mb-4">
+                    <div class="row">
+                        <!-- Address -->
+                        <div class="col-md-6 mb-4">
+                            <h6 class="fw-bold text-uppercase">Address</h6>
+                            <p class="small mb-0">1001 4th Ave</p>
+                            <p class="small mb-0">Suite 3100</p>
+                            <p class="small">Seattle, WA 98154</p>
+                        </div>
+
+                        <!-- Hire Us -->
+                        <div class="col-md-6 mb-4">
+                            <h6 class="fw-bold text-uppercase">Hire Us</h6>
+                            <ul class="list-unstyled small">
+                                <li><a href="mailto:Chris.S.Ell@wsp.com"
+                                        class="text-danger text-decoration-none">Chris.S.Ell@wsp.com</a></li>
+                                <li><a href="mailto:Michael.Gaunt@wsp.com"
+                                        class="text-danger text-decoration-none">Michael.Gaunt@wsp.com</a></li>
+                                <li><a href="mailto:Jolie.Tran@wsp.com"
+                                        class="text-danger text-decoration-none">Jolie.Tran@wsp.com</a></li>
+                                <li><a href="mailto:Ling.Chen@wsp.com"
+                                        class="text-danger text-decoration-none">Ling.Chen@wsp.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

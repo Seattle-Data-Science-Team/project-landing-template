@@ -1,0 +1,48 @@
+body {
+    font-family: 'Segoe UI', 'Inter', sans-serif;
+    background-color: #fff;
+    scroll-behavior: smooth;
+}
+
+.sidebar {
+    /* position: fixed; */
+    top: 100px;
+    left: 20px;
+}
+
+.mockup-container img {
+    object-fit: cover;
+    height: auto;
+    border-radius: 6px;
+}
+
+.content {
+    max-width: 1500px;
+    padding: 2rem;
+}
+
+#info-body {
+    padding: 2rem 0 1rem 0;
+}
+/* Initially hide the sidebar and adjust main content width for smaller screens */
+@media (max-width: 991.98px) {
+    .sidebar {
+        display: none !important;
+    }
+
+    .content .col-md-9 {
+        width: 100%;
+    }
+
+    .return-link-top {
+        display: block !important;
+        margin-bottom: 10px;
+    }
+}
+
+/* Show sidebar and adjust main content for larger screens */
+@media (min-width: 992px) {
+    .return-link-top {
+        display: none !important;
+    }
+}
